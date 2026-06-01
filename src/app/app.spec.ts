@@ -35,7 +35,7 @@ describe('App', () => {
     nextButton.click();
     fixture.detectChanges();
     expect(compiled.querySelector('.gallery-copy h3')?.textContent).toContain(
-      'Trilha suave para o ponto mais simbolico',
+      'Mistica sublime',
     );
   });
 
@@ -44,7 +44,7 @@ describe('App', () => {
     const app = fixture.componentInstance;
     const compiled = fixture.nativeElement as HTMLElement;
 
-    app.setGalleryPhoto(3);
+    app.setGalleryPhoto(1);
     fixture.detectChanges();
 
     const video = compiled.querySelector<HTMLVideoElement>('video.gallery-video');
@@ -58,7 +58,7 @@ describe('App', () => {
     const app = fixture.componentInstance;
     const compiled = fixture.nativeElement as HTMLElement;
 
-    app.setGalleryPhoto(3);
+    app.setGalleryPhoto(1);
     fixture.detectChanges();
     expect(compiled.querySelector<HTMLVideoElement>('video.gallery-video')?.getAttribute('src')).toBe(
       '/assets/mistica_sublime.mp4',
