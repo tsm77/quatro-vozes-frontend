@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 
 type GalleryItem = {
-  image: string;
+  type: 'image' | 'video';
+  src: string;
+  poster?: string;
   alt: string;
   label: string;
   title: string;
@@ -21,7 +23,8 @@ type SongSuggestion = {
 export class App {
   readonly galleryItems: GalleryItem[] = [
     {
-      image: '/assets/foto_oficial.jpeg',
+      type: 'image',
+      src: '/assets/foto_oficial.jpeg',
       alt: 'Grupo Quatro Vozes Um Sim em uma cerimonia na igreja',
       label: 'Cerimonia na igreja',
       title: 'Harmonia para a entrada dos noivos',
@@ -29,20 +32,24 @@ export class App {
         'Vozes conduzindo o inicio da celebracao com delicadeza, presenca e um repertorio escolhido para emocionar familiares e convidados.',
     },
     {
-      image: '/assets/foto_oficial.jpeg',
-      alt: 'Integrantes do grupo durante registro de casamento',
-      label: 'Momento das aliancas',
-      title: 'Trilha suave para o ponto mais simbolico',
+      type: 'video',
+      src: '/assets/mistica_sublime.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Mistica Sublime',
+      label: 'Comunhão',
+      title: 'Mistica sublime',
       description:
-        'Arranjos vocais pensados para sustentar a emocao do rito sem pesar, deixando a palavra e o gesto dos noivos em primeiro plano.',
+        'Registro em video para ouvir a textura vocal do grupo e sentir como a musica preenche a celebracao com leveza e reverencia.',
     },
     {
-      image: '/assets/foto_oficial.jpeg',
-      alt: 'Quatro Vozes Um Sim em espaco de celebracao',
-      label: 'Saida celebrativa',
-      title: 'Musica para fechar a cerimonia com alegria',
+      type: 'video',
+      src: '/assets/primeiro_olhar.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Primeiro Olhar',
+      label: 'Assinatura dos padrinhos e fotos',
+      title: 'Primeiro Olhar',
       description:
-        'Repertorio mais luminoso para acompanhar os cumprimentos, as fotos e aquele primeiro instante do casal depois do sim.',
+        'Registro em video para ouvir a textura vocal do grupo e sentir como a musica preenche a celebracao com leveza e reverencia.',
     },
   ];
 

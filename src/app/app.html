@@ -57,15 +57,29 @@
       <p class="eyebrow">casamentos que já cantamos</p>
       <h2 id="gallery-title">Galeria de fotos e videos</h2>
       <p>
-        Alguns registros especiais das cerimonias onde nossa música acompanhou entradas, aliancas,
+        Alguns registros especiais das cerimonias onde nossa música acompanhou entradas, alianças,
         votos e saidas emocionantes.
       </p>
     </div>
 
-    <div class="gallery-carousel" aria-label="Carrossel de fotos da galeria" aria-live="polite">
+    <div class="gallery-carousel" aria-label="Carrossel de midias da galeria" aria-live="polite">
       <article class="gallery-slide">
         <figure class="gallery-image-frame">
-          <img [src]="activeGalleryItem.image" [alt]="activeGalleryItem.alt" />
+          @if (activeGalleryItem.type === 'video') {
+            <video
+              class="gallery-video"
+              controls
+              playsinline
+              preload="metadata"
+              [src]="activeGalleryItem.src"
+              [attr.poster]="activeGalleryItem.poster ?? null"
+              [attr.aria-label]="activeGalleryItem.alt"
+            >
+              Seu navegador nao suporta videos HTML5.
+            </video>
+          } @else {
+            <img [src]="activeGalleryItem.src" [alt]="activeGalleryItem.alt" />
+          }
         </figure>
 
         <div class="gallery-copy">
@@ -81,17 +95,17 @@
           class="gallery-nav"
           type="button"
           (click)="previousGalleryPhoto()"
-          aria-label="Foto anterior"
+          aria-label="Midia anterior"
         >
           &lsaquo;
         </button>
 
-        <div class="gallery-dots" aria-label="Selecionar foto da galeria">
+        <div class="gallery-dots" aria-label="Selecionar midia da galeria">
           @for (item of galleryItems; track item.title; let index = $index) {
             <button
               type="button"
               [class.is-active]="index === activeGalleryIndex"
-              [attr.aria-label]="'Mostrar foto: ' + item.title"
+              [attr.aria-label]="'Mostrar midia: ' + item.title"
               [attr.aria-current]="index === activeGalleryIndex ? 'true' : null"
               (click)="setGalleryPhoto(index)"
             ></button>
@@ -102,7 +116,7 @@
           class="gallery-nav"
           type="button"
           (click)="nextGalleryPhoto()"
-          aria-label="Proxima foto"
+          aria-label="Proxima midia"
         >
           &rsaquo;
         </button>

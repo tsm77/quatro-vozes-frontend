@@ -39,6 +39,39 @@ describe('App', () => {
     );
   });
 
+  it('should render the gallery video with controls', () => {
+    const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
+    const compiled = fixture.nativeElement as HTMLElement;
+
+    app.setGalleryPhoto(3);
+    fixture.detectChanges();
+
+    const video = compiled.querySelector<HTMLVideoElement>('video.gallery-video');
+    expect(video).toBeTruthy();
+    expect(video?.hasAttribute('controls')).toBe(true);
+    expect(video?.getAttribute('src')).toBe('/assets/mistica_sublime.mp4');
+  });
+
+  it('should switch between gallery videos', () => {
+    const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
+    const compiled = fixture.nativeElement as HTMLElement;
+
+    app.setGalleryPhoto(3);
+    fixture.detectChanges();
+    expect(compiled.querySelector<HTMLVideoElement>('video.gallery-video')?.getAttribute('src')).toBe(
+      '/assets/mistica_sublime.mp4',
+    );
+
+    const nextButton = compiled.querySelectorAll<HTMLButtonElement>('.gallery-nav')[1];
+    nextButton.click();
+    fixture.detectChanges();
+    expect(compiled.querySelector<HTMLVideoElement>('video.gallery-video')?.getAttribute('src')).toBe(
+      '/assets/primeiro_olhar.mp4',
+    );
+  });
+
   it('should render wedding song suggestions', () => {
     const fixture = TestBed.createComponent(App);
     const compiled = fixture.nativeElement as HTMLElement;
