@@ -36,6 +36,24 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
+## Deploy on Vercel
+
+This project includes a `vercel.json` configured for Angular:
+
+- Build command: `npm run build`
+- Output directory: `dist/quatro-vozes-frontend/browser`
+- SPA fallback: all routes rewrite to `index.html`
+
+To deploy from the Vercel dashboard, import this repository and keep the Angular framework preset. The configuration file will provide the build and output settings.
+
+To deploy from the command line:
+
+```bash
+npx vercel login
+npx vercel
+npx vercel --prod
+```
+
 ## Running unit tests
 
 To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
