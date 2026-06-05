@@ -43,7 +43,7 @@ export class App {
     },
     {
       type: 'video',
-      src: '/assets/primeiro_olhar_anjos_de_resgate.mp4',
+      src: '/assets/primeiro_olhar.mp4',
       poster: '/assets/foto_oficial.jpeg',
       alt: 'Video do grupo Quatro Vozes Um Sim cantando Primeiro Olhar',
       label: 'Assinatura dos padrinhos e fotos',

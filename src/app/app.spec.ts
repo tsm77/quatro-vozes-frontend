@@ -68,7 +68,7 @@ describe('App', () => {
     nextButton.click();
     fixture.detectChanges();
     expect(compiled.querySelector<HTMLVideoElement>('video.gallery-video')?.getAttribute('src')).toBe(
-      '/assets/primeiro_olhar_anjos_de_resgate.mp4',
+      '/assets/primeiro_olhar.mp4',
     );
   });
 
