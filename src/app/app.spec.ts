@@ -28,7 +28,7 @@ describe('App', () => {
 
     fixture.detectChanges();
     expect(compiled.querySelector('.gallery-copy h3')?.textContent).toContain(
-      'Harmonia para a entrada dos noivos',
+      'Uma trilha sonora para contar a sua história',
     );
 
     const nextButton = compiled.querySelectorAll<HTMLButtonElement>('.gallery-nav')[1];
@@ -68,7 +68,7 @@ describe('App', () => {
     nextButton.click();
     fixture.detectChanges();
     expect(compiled.querySelector<HTMLVideoElement>('video.gallery-video')?.getAttribute('src')).toBe(
-      '/assets/primeiro_olhar.mp4',
+      '/assets/primeiro_olhar_anjos_de_resgate.mp4',
     );
   });
 
@@ -90,5 +90,7 @@ describe('App', () => {
       compiled.querySelector('a[href*="instagram.com/quatrovozesumsim_casamentos"]'),
     ).toBeTruthy();
     expect(compiled.querySelector('a[href*="wa.me"]')).toBeTruthy();
+    expect(compiled.textContent).toContain('Porque alguns momentos passam.');
+    expect(compiled.textContent).toContain("O seu 'sim' merece ser eterno.");
   });
 });

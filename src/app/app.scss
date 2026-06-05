@@ -146,14 +146,31 @@ video {
     span {
       display: block;
     }
+
+    span:last-child {
+      text-align: center;
+    }
   }
 
-  p:not(.eyebrow) {
+  p:not(.eyebrow):not(.hero-tagline) {
     width: min(100%, 42rem);
     max-width: 42rem;
     margin-top: 0.85rem;
     color: $muted;
     line-height: 1.7;
+  }
+
+  .hero-tagline {
+    width: min(100%, 42rem);
+    max-width: 42rem;
+    margin-top: 0.8rem;
+    color: $muted;
+    line-height: 1.8;
+    text-align: center;
+
+    span {
+      display: block;
+    }
   }
 }
 
@@ -465,12 +482,28 @@ video {
 .contact-links {
   display: grid;
   grid-template-columns: repeat(2, minmax(120px, 1fr));
+  justify-items: center;
   gap: 1.1rem 2rem;
+}
+
+.contact-tagline {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 0.15rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 30rem;
+  margin-top: 0.25rem;
+  color: $sage-deep;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
 }
 
 .contact-link {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.6rem;
   min-height: 3rem;
   color: $sage-deep;

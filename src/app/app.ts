@@ -26,10 +26,10 @@ export class App {
       type: 'image',
       src: '/assets/foto_oficial.jpeg',
       alt: 'Grupo Quatro Vozes Um Sim em uma cerimonia na igreja',
-      label: 'Cerimonia na igreja',
-      title: 'Harmonia para a entrada dos noivos',
+      label: 'Cerimônia na igreja',
+      title: 'Uma trilha sonora para contar a sua história',
       description:
-        'Vozes conduzindo o inicio da celebracao com delicadeza, presenca e um repertorio escolhido para emocionar familiares e convidados.',
+        'Cada momento do casamento possui uma emoção única. Para ajudar na escolha do repertório, reunimos sugestões cuidadosamente selecionadas para acompanhar cada etapa da cerimônia, respeitando o estilo, a personalidade a história de cada casal.',
     },
     {
       type: 'video',
@@ -43,7 +43,7 @@ export class App {
     },
     {
       type: 'video',
-      src: '/assets/primeiro_olhar.mp4',
+      src: '/assets/primeiro_olhar_anjos_de_resgate.mp4',
       poster: '/assets/foto_oficial.jpeg',
       alt: 'Video do grupo Quatro Vozes Um Sim cantando Primeiro Olhar',
       label: 'Assinatura dos padrinhos e fotos',
