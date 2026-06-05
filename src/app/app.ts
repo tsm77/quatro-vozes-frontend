@@ -39,7 +39,7 @@ export class App {
       label: 'Comunhão',
       title: 'Mistica sublime',
       description:
-        'Registro em video para ouvir a textura vocal do grupo e sentir como a musica preenche a celebracao com leveza e reverencia.',
+        'Ao som de Mística Sublime, a Comunhão ganha ainda mais profundidade e beleza. Este registro permite sentir a suavidade das vozes e a atmosfera de oração que a música proporciona, preenchendo a celebração com fé, emoção e serenidade.',
     },
     {
       type: 'video',
@@ -49,7 +49,7 @@ export class App {
       label: 'Assinatura dos padrinhos e fotos',
       title: 'Primeiro Olhar',
       description:
-        'Registro em video para ouvir a textura vocal do grupo e sentir como a musica preenche a celebracao com leveza e reverencia.',
+        'Registro em vídeo ao som de Primeiro Olhar, capturando a emoção, a expectativa e a beleza de um instante único, onde os olhares expressam sentimentos que as palavras não conseguem descrever.',
     },
   ];
 
