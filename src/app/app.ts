@@ -43,13 +43,23 @@ export class App {
     },
     {
       type: 'video',
-      src: '/assets/primeiro_olhar.mp4',
+      src: 'https://ibjotqrferjkviz5.public.blob.vercel-storage.com/primeiro_olhar_anjos_de_resgate.mp4',
       poster: '/assets/foto_oficial.jpeg',
       alt: 'Video do grupo Quatro Vozes Um Sim cantando Primeiro Olhar',
       label: 'Assinatura dos padrinhos e fotos',
       title: 'Primeiro Olhar',
       description:
         'Registro em vídeo ao som de Primeiro Olhar, capturando a emoção, a expectativa e a beleza de um instante único, onde os olhares expressam sentimentos que as palavras não conseguem descrever.',
+    },
+    {
+      type: 'video',
+      src: 'https://ibjotqrferjkviz5.public.blob.vercel-storage.com/COLO%20DE%20M%C3%83E%20-%20ADRIANA%20ARYDES.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Colo de Mãe',
+      label: 'Entrada da Imagem',
+      title: 'Colo de Mãe',
+      description:
+        'Ao som de "Colo de Mãe", de Ariana Arydes, este momento convida a repousar no abraço materno de Maria. Entre olhares, gestos e emoções, a canção recorda que nunca caminhamos sozinhos quando nos deixamos conduzir pelo amor da Mãe que acolhe, protege e intercede por seus filhos.',
     },
   ];
 
