@@ -33,13 +33,23 @@ export class App {
     },
     {
       type: 'video',
-      src: '/assets/mistica_sublime.mp4',
+      src: 'https://ibjotqrferjkviz5.public.blob.vercel-storage.com/M%C3%8DSTICA%20SUBLIME%20-%20COLO%20DE%20DEUS.mp4',
       poster: '/assets/foto_oficial.jpeg',
       alt: 'Video do grupo Quatro Vozes Um Sim cantando Mistica Sublime',
       label: 'Comunhão',
       title: 'Mistica sublime',
       description:
         'Ao som de Mística Sublime, a Comunhão ganha ainda mais profundidade e beleza. Este registro permite sentir a suavidade das vozes e a atmosfera de oração que a música proporciona, preenchendo a celebração com fé, emoção e serenidade.',
+    },
+    {
+      type: 'video',
+      src: 'https://ibjotqrferjkviz5.public.blob.vercel-storage.com/TERRA%20SECA%20-%20FRATERNIDADE%20S%C3%83O%20JO%C3%83O%20PAULO%20II.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Terra Seca',
+      label: 'Entrada do noivo',
+      title: 'Terra Seca',
+      description:
+        'Ao som de "Terra Seca", este momento expressa a sede profunda do coração humano pelo amor de Deus. Uma canção que transforma a aridez em esperança e revela que, quando confiamos no Senhor, até os desertos podem florescer.',
     },
     {
       type: 'video',

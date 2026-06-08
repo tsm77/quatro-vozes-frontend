@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Quatro Vozes Um Sim">
+  <circle cx="32" cy="32" r="30" fill="#3f5646" />
+  <circle cx="32" cy="32" r="25.5" fill="none" stroke="#bea16f" stroke-width="2" />
+  <path
+    d="M19 36V28M27.5 42V22M36.5 42V22M45 36V28"
+    fill="none"
+    stroke="#fffdf8"
+    stroke-linecap="round"
+    stroke-width="5"
+  />
+  <circle cx="32" cy="49" r="2" fill="#bea16f" />
+</svg>
