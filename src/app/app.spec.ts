@@ -93,6 +93,29 @@ describe('App', () => {
     expect(video?.hasAttribute('controls')).toBe(true);
   });
 
+  it.each(['Chuva de graça', 'Sinal do meu amor', 'Casa'])(
+    'should render the %s gallery video',
+    (title) => {
+      const fixture = TestBed.createComponent(App);
+      const app = fixture.componentInstance;
+      const compiled = fixture.nativeElement as HTMLElement;
+      const videoIndex = app.galleryItems.findIndex((item) => item.title === title);
+
+      expect(videoIndex).toBeGreaterThanOrEqual(0);
+
+      app.setGalleryPhoto(videoIndex);
+      fixture.detectChanges();
+
+      const galleryItem = app.galleryItems[videoIndex];
+      const video = compiled.querySelector<HTMLVideoElement>('video.gallery-video');
+
+      expect(compiled.querySelector('.gallery-copy h3')?.textContent).toContain(title);
+      expect(video?.getAttribute('src')).toBe(galleryItem.src);
+      expect(video?.getAttribute('aria-label')).toBe(galleryItem.alt);
+      expect(video?.hasAttribute('controls')).toBe(true);
+    },
+  );
+
   it('should render wedding song suggestions', () => {
     const fixture = TestBed.createComponent(App);
     const compiled = fixture.nativeElement as HTMLElement;

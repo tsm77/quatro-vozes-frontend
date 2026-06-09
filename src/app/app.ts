@@ -69,7 +69,7 @@ export class App {
       label: 'Entrada da Imagem',
       title: 'Colo de Mãe',
       description:
-        'Ao som de "Colo de Mãe", de Ariana Arydes, este momento convida a repousar no abraço materno de Maria. Entre olhares, gestos e emoções, a canção recorda que nunca caminhamos sozinhos quando nos deixamos conduzir pelo amor da Mãe que acolhe, protege e intercede por seus filhos.',
+        'Ao som de "Colo de Mãe", de Adriana Arydes, este momento convida a repousar no abraço materno de Maria. Entre olhares, gestos e emoções, a canção recorda que nunca caminhamos sozinhos quando nos deixamos conduzir pelo amor da Mãe que acolhe, protege e intercede por seus filhos.',
     },
     {
       type: 'video',
@@ -81,17 +81,47 @@ export class App {
       description:
         'Registro em vídeo ao som de "Eu Juro", de Leandro & Leonardo, marcando um dos momentos mais emocionantes da celebração. Uma canção que expressa a beleza das promessas feitas diante do amor, da cumplicidade e da decisão de construir uma vida a dois.',
     },
+    {
+      type: 'video',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/CHUVA-DE-GRACA-ELIANE-RIBEIRO.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Chuva de graça',
+      label: 'Saída dos Noivos',
+      title: 'Chuva de graça',
+      description:
+        'Registro em vídeo ao som de "Chuva de Graça", de Eliana Ribeiro, este momento celebra a alegria do amor abençoado por Deus. Na saída dos noivos, a canção expressa a certeza de que a graça divina acompanha cada passo dessa nova caminhada, derramando bênçãos, esperança e felicidade sobre a família que nasce.',
+    },
+    {
+      type: 'video',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/SINAL-DO-MEU-AMOR-DAVIDSON-SILVA.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Sinal do meu amor',
+      label: 'Alianças',
+      title: 'Sinal do meu amor',
+      description:
+        'Registro em vídeo ao som de "Sinal do Meu Amor", de Davidson Silva, as alianças selam a união de duas vidas que agora caminham como uma só. Um gesto simples, mas carregado de significado, que expressa a força do amor, da confiança e da bênção de Deus sobre o casal.',
+    },
+    {
+      type: 'video',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/CASA-COLO-DE-DEUS.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Casa',
+      label: 'Padrinhos',
+      title: 'Casa',
+      description:
+        'Ao som de "Casa", da Comunidade Colo de Deus, os padrinhos entram como testemunhas de uma história construída com amor e amizade. Pessoas especiais que compartilham alegrias, desafios e a missão de acompanhar o casal em sua nova caminhada.',
+    },
   ];
 
   readonly songSuggestions: SongSuggestion[] = [
     {
       moment: 'Pais e Padrinhos',
       songs: [
-        'Eternos amigos',
-        'Sou teu anjo aqui',
-        'Amigos pela fé',
-        'O céu se abre',
-        'Tua Família',
+        'Eternos amigos - Anjos de Resgate',
+        'Sou teu anjo aqui - Anjos de Resgate',
+        'Amigos pela fé - Anjos de Resgate',
+        'O céu se abre - O Céu Se Abre',
+        'Tua Família - Anjos de Resgate',
         'Casa - Colo de Deus',
       ],
     },
@@ -103,29 +133,33 @@ export class App {
         'Te amo e te amarei - Pe. Zezinho',
         'Abraço eterno - Pe. Fábio',
         'Vou te amar - Marcio Todeschini',
-        'Terra Seca',
+        'Terra Seca - Fraternidade São João Paulo II ',
       ],
     },
     {
       moment: 'Daminhas e Pagens',
-      songs: ['Amar como Jesus amou', 'Anjos de Deus', 'Mãezinha do céu'],
+      songs: [
+        'Amar como Jesus amou - Pe. Marcelo Rossi',
+        'Anjos de Deus - Pe. Marcelo Rossi',
+        'Mãezinha do céu - Pe. Marcelo Ross',
+      ],
     },
     {
       moment: 'Noiva',
       songs: [
         'Ave-Maria',
         'A padroeira',
-        'Deixa Deus sonhar em ti',
-        'Jesus meu esposo',
-        'O primeiro olhar',
-        'Abraço eterno',
+        'Deixa Deus sonhar em ti - Frei Gilson',
+        'Jesus meu esposo - Colo de Deus',
+        'O primeiro olhar - Anjos de Resgate',
+        'Abraço eterno - Pe. Fabio de Melo',
         'Eis-me aqui - Colo de Deus',
         'Eu Juro - Leandro e Leonardo',
       ],
     },
     {
       moment: 'Evangelho',
-      songs: ['Aleluia', 'Fala Senhor', 'Buscai primeiro'],
+      songs: ['Aleluia - CNBB', 'Fala Senhor - CNBB', 'Buscai primeiro - Vencedores Por Cristo'],
     },
     {
       moment: 'Alianças',
@@ -139,26 +173,27 @@ export class App {
     {
       moment: 'Comunhão',
       songs: [
-        'Sacramento da comunhão',
-        'Milagre de amor',
-        'Ao partir o pão',
-        'Mística sublime',
-        'Incomparável comunhão',
+        'Sacramento da comunhão - Nelsinho Corrêa',
+        'Milagre de amor - Juliana de Paula',
+        'Ao partir o pão - Walmir Alencar',
+        'Mística sublime - Colo de Deus',
+        'Incomparável comunhão - Missionário Shalom',
       ],
     },
     {
       moment: 'Após os Votos e Saída dos Noivos',
       songs: [
         'Você e Eu - Eliane Ribeiro',
+        'Chuva de graça - Eliane Ribeiro',
         'Águia pequena - Pe. Zezinho',
-        'Terra seca',
-        'Oração pela família',
-        'Juramento - Padre Zezinho',
+        'Terra Seca - Fraternidade São João Paulo II ',
+        'Oração pela família Pe. Zezinho',
+        'Juramento - Pe. Zezinho',
         'Oração do amor - Arianne',
         'Humano amor de Deus - Pe. Fábio',
         'Nossa História - Dunga',
-        'Eu te levantarei',
-        'Eu seguirei',
+        'Eu te levantarei - Frei Gilson',
+        'Eu seguirei - Frei Gilson',
       ],
     },
   ];
