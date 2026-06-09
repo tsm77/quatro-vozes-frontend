@@ -50,7 +50,7 @@ describe('App', () => {
     const video = compiled.querySelector<HTMLVideoElement>('video.gallery-video');
     expect(video).toBeTruthy();
     expect(video?.hasAttribute('controls')).toBe(true);
-    expect(video?.getAttribute('src')).toBe('/assets/mistica_sublime.mp4');
+    expect(video?.getAttribute('src')).toBe(app.galleryItems[1].src);
   });
 
   it('should switch between gallery videos', () => {
@@ -61,15 +61,16 @@ describe('App', () => {
     app.setGalleryPhoto(1);
     fixture.detectChanges();
     expect(compiled.querySelector<HTMLVideoElement>('video.gallery-video')?.getAttribute('src')).toBe(
-      '/assets/mistica_sublime.mp4',
+      app.galleryItems[1].src,
     );
 
     const nextButton = compiled.querySelectorAll<HTMLButtonElement>('.gallery-nav')[1];
     nextButton.click();
     fixture.detectChanges();
     expect(compiled.querySelector<HTMLVideoElement>('video.gallery-video')?.getAttribute('src')).toBe(
-      'https://ibjotqrferjkviz5.public.blob.vercel-storage.com/primeiro_olhar_anjos_de_resgate.mp4',
+      app.galleryItems[2].src,
     );
+    expect(compiled.querySelector('.gallery-copy h3')?.textContent).toContain('Terra Seca');
   });
 
   it('should render wedding song suggestions', () => {

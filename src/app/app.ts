@@ -33,7 +33,7 @@ export class App {
     },
     {
       type: 'video',
-      src: 'https://ibjotqrferjkviz5.public.blob.vercel-storage.com/M%C3%8DSTICA%20SUBLIME%20-%20COLO%20DE%20DEUS.mp4',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/MISTICA-SUBLIME-COLO-DE-DEUS.mp4',
       poster: '/assets/foto_oficial.jpeg',
       alt: 'Video do grupo Quatro Vozes Um Sim cantando Mistica Sublime',
       label: 'Comunhão',
@@ -43,7 +43,7 @@ export class App {
     },
     {
       type: 'video',
-      src: 'https://ibjotqrferjkviz5.public.blob.vercel-storage.com/TERRA%20SECA%20-%20FRATERNIDADE%20S%C3%83O%20JO%C3%83O%20PAULO%20II.mp4',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/TERRA-SECA-FRATERNIDADE-SAO-JOAO-PAULO-II.mp4',
       poster: '/assets/foto_oficial.jpeg',
       alt: 'Video do grupo Quatro Vozes Um Sim cantando Terra Seca',
       label: 'Entrada do noivo',
@@ -63,7 +63,7 @@ export class App {
     },
     {
       type: 'video',
-      src: 'https://ibjotqrferjkviz5.public.blob.vercel-storage.com/COLO%20DE%20M%C3%83E%20-%20ADRIANA%20ARYDES.mp4',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/COLO-DE-MAE-ADRIANA-ARYDES.mp4',
       poster: '/assets/foto_oficial.jpeg',
       alt: 'Video do grupo Quatro Vozes Um Sim cantando Colo de Mãe',
       label: 'Entrada da Imagem',
