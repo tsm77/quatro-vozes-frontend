@@ -73,6 +73,26 @@ describe('App', () => {
     expect(compiled.querySelector('.gallery-copy h3')?.textContent).toContain('Terra Seca');
   });
 
+  it('should render the Eu Juro gallery video', () => {
+    const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
+    const compiled = fixture.nativeElement as HTMLElement;
+    const euJuroIndex = app.galleryItems.findIndex((item) => item.title === 'Eu Juro');
+
+    expect(euJuroIndex).toBeGreaterThanOrEqual(0);
+
+    app.setGalleryPhoto(euJuroIndex);
+    fixture.detectChanges();
+
+    const euJuroItem = app.galleryItems[euJuroIndex];
+    const video = compiled.querySelector<HTMLVideoElement>('video.gallery-video');
+
+    expect(compiled.querySelector('.gallery-copy h3')?.textContent).toContain('Eu Juro');
+    expect(video?.getAttribute('src')).toBe(euJuroItem.src);
+    expect(video?.getAttribute('aria-label')).toBe(euJuroItem.alt);
+    expect(video?.hasAttribute('controls')).toBe(true);
+  });
+
   it('should render wedding song suggestions', () => {
     const fixture = TestBed.createComponent(App);
     const compiled = fixture.nativeElement as HTMLElement;

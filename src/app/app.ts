@@ -71,6 +71,16 @@ export class App {
       description:
         'Ao som de "Colo de Mãe", de Ariana Arydes, este momento convida a repousar no abraço materno de Maria. Entre olhares, gestos e emoções, a canção recorda que nunca caminhamos sozinhos quando nos deixamos conduzir pelo amor da Mãe que acolhe, protege e intercede por seus filhos.',
     },
+    {
+      type: 'video',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/EU-JURO-LEANDRO-E-LEONARDO.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Eu Juro',
+      label: 'Entrada da Noiva',
+      title: 'Eu Juro',
+      description:
+        'Registro em vídeo ao som de "Eu Juro", de Leandro & Leonardo, marcando um dos momentos mais emocionantes da celebração. Uma canção que expressa a beleza das promessas feitas diante do amor, da cumplicidade e da decisão de construir uma vida a dois.',
+    },
   ];
 
   readonly songSuggestions: SongSuggestion[] = [
