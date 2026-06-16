@@ -33,13 +33,13 @@ export class App {
     },
     {
       type: 'video',
-      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/MISTICA-SUBLIME-COLO-DE-DEUS.mp4',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/CASA-COLO-DE-DEUS.mp4',
       poster: '/assets/foto_oficial.jpeg',
-      alt: 'Video do grupo Quatro Vozes Um Sim cantando Mistica Sublime',
-      label: 'Comunhão',
-      title: 'Mistica sublime',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Casa',
+      label: 'Padrinhos',
+      title: 'Casa',
       description:
-        'Ao som de Mística Sublime, a Comunhão ganha ainda mais profundidade e beleza. Este registro permite sentir a suavidade das vozes e a atmosfera de oração que a música proporciona, preenchendo a celebração com fé, emoção e serenidade.',
+        'Ao som de "Casa", da Comunidade Colo de Deus, os padrinhos entram como testemunhas de uma história construída com amor e amizade. Pessoas especiais que compartilham alegrias, desafios e a missão de acompanhar o casal em sua nova caminhada.',
     },
     {
       type: 'video',
@@ -53,26 +53,6 @@ export class App {
     },
     {
       type: 'video',
-      src: 'https://ibjotqrferjkviz5.public.blob.vercel-storage.com/primeiro_olhar_anjos_de_resgate.mp4',
-      poster: '/assets/foto_oficial.jpeg',
-      alt: 'Video do grupo Quatro Vozes Um Sim cantando Primeiro Olhar',
-      label: 'Assinatura dos padrinhos e fotos',
-      title: 'Primeiro Olhar',
-      description:
-        'Registro em vídeo ao som de Primeiro Olhar, capturando a emoção, a expectativa e a beleza de um instante único, onde os olhares expressam sentimentos que as palavras não conseguem descrever.',
-    },
-    {
-      type: 'video',
-      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/COLO-DE-MAE-ADRIANA-ARYDES.mp4',
-      poster: '/assets/foto_oficial.jpeg',
-      alt: 'Video do grupo Quatro Vozes Um Sim cantando Colo de Mãe',
-      label: 'Entrada da Imagem',
-      title: 'Colo de Mãe',
-      description:
-        'Ao som de "Colo de Mãe", de Adriana Arydes, este momento convida a repousar no abraço materno de Maria. Entre olhares, gestos e emoções, a canção recorda que nunca caminhamos sozinhos quando nos deixamos conduzir pelo amor da Mãe que acolhe, protege e intercede por seus filhos.',
-    },
-    {
-      type: 'video',
       src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/EU-JURO-LEANDRO-E-LEONARDO.mp4',
       poster: '/assets/foto_oficial.jpeg',
       alt: 'Video do grupo Quatro Vozes Um Sim cantando Eu Juro',
@@ -80,16 +60,6 @@ export class App {
       title: 'Eu Juro',
       description:
         'Registro em vídeo ao som de "Eu Juro", de Leandro & Leonardo, marcando um dos momentos mais emocionantes da celebração. Uma canção que expressa a beleza das promessas feitas diante do amor, da cumplicidade e da decisão de construir uma vida a dois.',
-    },
-    {
-      type: 'video',
-      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/CHUVA-DE-GRACA-ELIANE-RIBEIRO.mp4',
-      poster: '/assets/foto_oficial.jpeg',
-      alt: 'Video do grupo Quatro Vozes Um Sim cantando Chuva de graça',
-      label: 'Saída dos Noivos',
-      title: 'Chuva de graça',
-      description:
-        'Registro em vídeo ao som de "Chuva de Graça", de Eliana Ribeiro, este momento celebra a alegria do amor abençoado por Deus. Na saída dos noivos, a canção expressa a certeza de que a graça divina acompanha cada passo dessa nova caminhada, derramando bênçãos, esperança e felicidade sobre a família que nasce.',
     },
     {
       type: 'video',
@@ -103,13 +73,43 @@ export class App {
     },
     {
       type: 'video',
-      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/CASA-COLO-DE-DEUS.mp4',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/MISTICA-SUBLIME-COLO-DE-DEUS.mp4',
       poster: '/assets/foto_oficial.jpeg',
-      alt: 'Video do grupo Quatro Vozes Um Sim cantando Casa',
-      label: 'Padrinhos',
-      title: 'Casa',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Mistica Sublime',
+      label: 'Comunhão',
+      title: 'Mistica sublime',
       description:
-        'Ao som de "Casa", da Comunidade Colo de Deus, os padrinhos entram como testemunhas de uma história construída com amor e amizade. Pessoas especiais que compartilham alegrias, desafios e a missão de acompanhar o casal em sua nova caminhada.',
+        'Ao som de Mística Sublime, a Comunhão ganha ainda mais profundidade e beleza. Este registro permite sentir a suavidade das vozes e a atmosfera de oração que a música proporciona, preenchendo a celebração com fé, emoção e serenidade.',
+    },
+    {
+      type: 'video',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/COLO-DE-MAE-ADRIANA-ARYDES.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Colo de Mãe',
+      label: 'Entrada da Imagem',
+      title: 'Colo de Mãe',
+      description:
+        'Ao som de "Colo de Mãe", de Adriana Arydes, este momento convida a repousar no abraço materno de Maria. Entre olhares, gestos e emoções, a canção recorda que nunca caminhamos sozinhos quando nos deixamos conduzir pelo amor da Mãe que acolhe, protege e intercede por seus filhos.',
+    },
+    {
+      type: 'video',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/PRIMEIRO-OLHAR.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Primeiro Olhar',
+      label: 'Assinatura dos padrinhos e fotos',
+      title: 'Primeiro Olhar',
+      description:
+        'Registro em vídeo ao som de Primeiro Olhar, capturando a emoção, a expectativa e a beleza de um instante único, onde os olhares expressam sentimentos que as palavras não conseguem descrever.',
+    },
+    {
+      type: 'video',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/CHUVA-DE-GRACA-ELIANE-RIBEIRO.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Chuva de graça',
+      label: 'Saída dos Noivos',
+      title: 'Chuva de graça',
+      description:
+        'Registro em vídeo ao som de "Chuva de Graça", de Eliana Ribeiro, este momento celebra a alegria do amor abençoado por Deus. Na saída dos noivos, a canção expressa a certeza de que a graça divina acompanha cada passo dessa nova caminhada, derramando bênçãos, esperança e felicidade sobre a família que nasce.',
     },
   ];
 
