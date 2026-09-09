@@ -33,6 +33,26 @@ export class App {
     },
     {
       type: 'video',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/O-CEU-SE-ABRE-MINISTERIO-ADORACAO-E-VIDA.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando O Céu se Abre',
+      label: 'Entrada dos padrinhos',
+      title: 'O Céu se Abre',
+      description:
+        'Ao som de "O Céu se Abre", do Ministério Adoração e Vida, a entrada dos padrinhos ganha um clima de alegria, amizade e gratidão. A música celebra as pessoas que caminham ao lado do casal e ajudam a tornar esse dia ainda mais especial.',
+    },
+    {
+      type: 'video',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/MAEZINHA-DO-CEU-PADRE-MARCELO-ROSSI.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Mãezinha do Céu',
+      label: 'Entrada dos pajens e daminhas',
+      title: 'Mãezinha do Céu',
+      description:
+        'Ao som de "Mãezinha do Céu", de Padre Marcelo Rossi, a entrada dos pajens e daminhas ganha ternura, pureza e alegria. A canção traz a delicadeza das crianças para a celebração e recorda o cuidado amoroso de Maria com cada família.',
+    },
+    {
+      type: 'video',
       src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/CASA-COLO-DE-DEUS.mp4',
       poster: '/assets/foto_oficial.jpeg',
       alt: 'Video do grupo Quatro Vozes Um Sim cantando Casa',
@@ -50,16 +70,6 @@ export class App {
       title: 'Terra Seca',
       description:
         'Ao som de "Terra Seca", este momento expressa a sede profunda do coração humano pelo amor de Deus. Uma canção que transforma a aridez em esperança e revela que, quando confiamos no Senhor, até os desertos podem florescer.',
-    },
-    {
-      type: 'video',
-      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/EU-JURO-LEANDRO-E-LEONARDO.mp4',
-      poster: '/assets/foto_oficial.jpeg',
-      alt: 'Video do grupo Quatro Vozes Um Sim cantando Eu Juro',
-      label: 'Entrada da Noiva',
-      title: 'Eu Juro',
-      description:
-        'Registro em vídeo ao som de "Eu Juro", de Leandro & Leonardo, marcando um dos momentos mais emocionantes da celebração. Uma canção que expressa a beleza das promessas feitas diante do amor, da cumplicidade e da decisão de construir uma vida a dois.',
     },
     {
       type: 'video',
@@ -103,6 +113,16 @@ export class App {
     },
     {
       type: 'video',
+      src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/JESUS-MEU-ESPOSO-COLO-DE-DEUS.mp4',
+      poster: '/assets/foto_oficial.jpeg',
+      alt: 'Video do grupo Quatro Vozes Um Sim cantando Jesus Meu Esposo',
+      label: 'Entrada da Noiva',
+      title: 'Jesus Meu Esposo',
+      description:
+        'Ao som de "Jesus Meu Esposo", do Colo de Deus, este momento expressa a entrega, a f\u00e9 e o amor de quem escolhe caminhar com Cristo. Uma can\u00e7\u00e3o de profunda intimidade e esperan\u00e7a, que combina com a emo\u00e7\u00e3o da entrada da noiva e com o in\u00edcio de uma nova hist\u00f3ria.',
+    },
+    {
+      type: 'video',
       src: 'https://pub-b969b589296345dd9cc3a0018f9d0ff7.r2.dev/CHUVA-DE-GRACA-ELIANE-RIBEIRO.mp4',
       poster: '/assets/foto_oficial.jpeg',
       alt: 'Video do grupo Quatro Vozes Um Sim cantando Chuva de graça',
@@ -123,6 +143,7 @@ export class App {
         'O céu se Abre - Ministério Adoração e Vida',
         'Tua Família - Anjos de Resgate',
         'Casa - Colo de Deus',
+        'Utópia - Padre Zezinho',
       ],
     },
     {
@@ -134,14 +155,21 @@ export class App {
         'Abraço Eterno - Pe. Fábio',
         'Vou te amar - Marcio Todeschini',
         'Terra Seca - Fraternidade São João Paulo II ',
+        'Teus Planos - Juninho Cassimiro',
+        'Pescador de Homens - Frei Gilson',
+        'Basta Querer - Pe. Marcelo Rossi',
       ],
     },
     {
-      moment: 'Daminhas e Pagens',
+      moment: 'Daminhas, Pagens e Florista',
       songs: [
         'Amar como Jesus amou - Pe. Marcelo Rossi',
         'Anjos de Deus - Pe. Marcelo Rossi',
         'Mãezinha do céu - Pe. Marcelo Rossi',
+        'Escolhi Te Esperar - Marcela Taís',
+        'Amar-te Mais - Davidson Silva',
+        'Cheiro de Rosas - Colo de Deus',
+        'Alecrim Dourado - Músicas Infantis',
       ],
     },
     {
@@ -155,6 +183,7 @@ export class App {
         'Abraço Eterno - Pe. Fabio de Melo',
         'Eis-me Aqui - Colo de Deus',
         'Eu Juro - Leandro e Leonardo',
+        'Minha História É Sua - Gerados pela Imaculada',
       ],
     },
     {
@@ -178,6 +207,9 @@ export class App {
         'Ao partir o pão - Walmir Alencar',
         'Mística Sublime - Colo de Deus',
         'Incomparável Comunhão - Missionário Shalom',
+        'Sacrifício de Amor - Fátima Souza',
+        'Ao Teu Encontro - Eliana Ribeiro',
+        'Como És Lindo - Vida Reluz',
       ],
     },
     {
@@ -194,6 +226,21 @@ export class App {
         'Nossa História - Dunga',
         'Eu te Levantarei - Frei Gilson',
         'Eu seguirei - Frei Gilson',
+        'Céu de Santo Amaro - Flávio Venturini',
+        'Aliança - Tribalistas',
+        'Dois Corações - Melim',
+        'Busque o Alto - Celina Borges',
+      ],
+    },
+    {
+      moment: 'Homenagem a entes queridos falecidos',
+      songs: [
+        'Verdades do tempo - Thiago Brado',
+        'Lembre de mim - A Vida É Uma Festa',
+        'Estrelinha - Marília Mendonça',
+        'Minha Herança - Ana Castela',
+        'Quando Se Perde Alguém - André Alves',
+        'Casinha Branca - Roberta Campos',
       ],
     },
   ];

@@ -91,7 +91,10 @@
         <div class="gallery-copy">
           <span>{{ activeGalleryItem.label }}</span>
           <h3>{{ activeGalleryItem.title }}</h3>
-          <p>{{ activeGalleryItem.description }}</p>
+          <p class="gallery-description">
+            <strong>Sobre a m&uacute;sica:</strong>
+            {{ activeGalleryItem.description }}
+          </p>
           <small>{{ activeGalleryIndex + 1 }} / {{ galleryItems.length }}</small>
         </div>
       </article>

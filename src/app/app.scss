@@ -321,6 +321,11 @@ video {
     line-height: 1.65;
   }
 
+  .gallery-description strong {
+    color: $ink;
+    font-weight: 800;
+  }
+
   small {
     margin-top: 1.4rem;
     color: rgba($ink, 0.48);

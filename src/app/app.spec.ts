@@ -24,6 +24,7 @@ describe('App', () => {
 
   it('should navigate the gallery carousel', () => {
     const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
     const compiled = fixture.nativeElement as HTMLElement;
 
     fixture.detectChanges();
@@ -35,7 +36,7 @@ describe('App', () => {
     nextButton.click();
     fixture.detectChanges();
     expect(compiled.querySelector('.gallery-copy h3')?.textContent).toContain(
-      'Mistica sublime',
+      app.galleryItems[1].title,
     );
   });
 
@@ -70,7 +71,9 @@ describe('App', () => {
     expect(compiled.querySelector<HTMLVideoElement>('video.gallery-video')?.getAttribute('src')).toBe(
       app.galleryItems[2].src,
     );
-    expect(compiled.querySelector('.gallery-copy h3')?.textContent).toContain('Terra Seca');
+    expect(compiled.querySelector('.gallery-copy h3')?.textContent).toContain(
+      app.galleryItems[2].title,
+    );
   });
 
   it('should render the Eu Juro gallery video', () => {
@@ -115,6 +118,90 @@ describe('App', () => {
       expect(video?.hasAttribute('controls')).toBe(true);
     },
   );
+
+  it('should show the music description for each video', () => {
+    const initialFixture = TestBed.createComponent(App);
+    const videoItems = initialFixture.componentInstance.galleryItems.filter(
+      (item) => item.type === 'video',
+    );
+
+    for (const item of videoItems) {
+      const fixture = TestBed.createComponent(App);
+      const app = fixture.componentInstance;
+      const compiled = fixture.nativeElement as HTMLElement;
+      const videoIndex = app.galleryItems.findIndex((galleryItem) => galleryItem.title === item.title);
+
+      app.setGalleryPhoto(videoIndex);
+      fixture.detectChanges();
+
+      const description = compiled.querySelector('.gallery-description');
+      expect(description?.textContent).toContain('Sobre a m\u00fasica:');
+      expect(description?.textContent).toContain(item.description);
+    }
+  });
+
+  it('should render the Jesus Meu Esposo gallery video and description', () => {
+    const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
+    const compiled = fixture.nativeElement as HTMLElement;
+    const videoIndex = app.galleryItems.findIndex((item) => item.title === 'Jesus Meu Esposo');
+
+    expect(videoIndex).toBeGreaterThanOrEqual(0);
+
+    app.setGalleryPhoto(videoIndex);
+    fixture.detectChanges();
+
+    const video = compiled.querySelector<HTMLVideoElement>('video.gallery-video');
+    expect(video?.getAttribute('src')).toBe(app.galleryItems[videoIndex].src);
+    expect(compiled.querySelector('.gallery-copy h3')?.textContent).toContain('Jesus Meu Esposo');
+    expect(compiled.querySelector('.gallery-description')?.textContent).toContain(
+      app.galleryItems[videoIndex].description,
+    );
+  });
+
+  it('should render O Céu se Abre for the padrinhos entrance', () => {
+    const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
+    const compiled = fixture.nativeElement as HTMLElement;
+    const videoIndex = app.galleryItems.findIndex((item) => item.title === 'O Céu se Abre');
+
+    expect(videoIndex).toBeGreaterThanOrEqual(0);
+
+    app.setGalleryPhoto(videoIndex);
+    fixture.detectChanges();
+
+    expect(compiled.querySelector('.gallery-copy > span')?.textContent).toContain(
+      'Entrada dos padrinhos',
+    );
+    expect(compiled.querySelector('.gallery-description')?.textContent).toContain(
+      app.galleryItems[videoIndex].description,
+    );
+    expect(compiled.querySelector<HTMLVideoElement>('video.gallery-video')?.getAttribute('src')).toBe(
+      app.galleryItems[videoIndex].src,
+    );
+  });
+
+  it('should render Mãezinha do Céu for the pajens and daminhas entrance', () => {
+    const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
+    const compiled = fixture.nativeElement as HTMLElement;
+    const videoIndex = app.galleryItems.findIndex((item) => item.title === 'Mãezinha do Céu');
+
+    expect(videoIndex).toBeGreaterThanOrEqual(0);
+
+    app.setGalleryPhoto(videoIndex);
+    fixture.detectChanges();
+
+    expect(compiled.querySelector('.gallery-copy > span')?.textContent).toContain(
+      'Entrada dos pajens e daminhas',
+    );
+    expect(compiled.querySelector('.gallery-description')?.textContent).toContain(
+      app.galleryItems[videoIndex].description,
+    );
+    expect(compiled.querySelector<HTMLVideoElement>('video.gallery-video')?.getAttribute('src')).toBe(
+      app.galleryItems[videoIndex].src,
+    );
+  });
 
   it('should render wedding song suggestions', () => {
     const fixture = TestBed.createComponent(App);
