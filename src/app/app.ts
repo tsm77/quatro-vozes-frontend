@@ -213,13 +213,24 @@ export class App {
       ],
     },
     {
+      moment: 'Homenagem a entes queridos falecidos',
+      songs: [
+        'Verdades do tempo - Thiago Brado',
+        'Lembre de mim - A Vida É Uma Festa',
+        'Estrelinha - Marília Mendonça',
+        'Minha Herança - Ana Castela',
+        'Quando Se Perde Alguém - André Alves',
+        'Casinha Branca - Roberta Campos',
+      ],
+    },
+    {
       moment: 'Após os Votos e Saída dos Noivos',
       songs: [
         'Você e Eu - Eliane Ribeiro',
         'Chuva de Graça - Eliane Ribeiro',
         'Águia Pequena - Pe. Zezinho',
         'Terra Seca - Fraternidade São João Paulo II ',
-        'Oração pela família Pe. Zezinho',
+        'Oração pela Familia - Pe. Zezinho',
         'Juramento - Pe. Zezinho',
         'Oração do Amor - Arianne',
         'Humano amor de Deus - Pe. Fábio',
@@ -230,17 +241,6 @@ export class App {
         'Aliança - Tribalistas',
         'Dois Corações - Melim',
         'Busque o Alto - Celina Borges',
-      ],
-    },
-    {
-      moment: 'Homenagem a entes queridos falecidos',
-      songs: [
-        'Verdades do tempo - Thiago Brado',
-        'Lembre de mim - A Vida É Uma Festa',
-        'Estrelinha - Marília Mendonça',
-        'Minha Herança - Ana Castela',
-        'Quando Se Perde Alguém - André Alves',
-        'Casinha Branca - Roberta Campos',
       ],
     },
   ];
